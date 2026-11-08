@@ -1,0 +1,373 @@
+/* =========================
+   RESET DASAR
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* =========================
+   WARNA DAN BACKGROUND
+========================= */
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #123C3A,
+        #263B38,
+        #35534B
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.welcome-container,
+.form-container,
+.profile-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================
+   CARD UTAMA
+========================= */
+
+.welcome-card,
+.form-card,
+.profile-card {
+    width: 100%;
+    max-width: 430px;
+    background: #E8E1D4;
+    padding: 35px;
+    border-radius: 22px;
+    text-align: center;
+
+    box-shadow: 0 15px 40px
+    rgba(0, 0, 0, 0.30);
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    width: 65px;
+    height: 65px;
+    background: #C87545;
+    color: white;
+    border-radius: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto 20px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/* =========================
+   TEXT DAN JUDUL
+========================= */
+
+.tagline {
+    display: inline-block;
+    color: #A95D35;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+h1,
+h2 {
+    color: #263B38;
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.subtitle {
+    color: #68766D;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.description {
+    color: #68766D;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   INFORMASI MAHASISWA
+========================= */
+
+.student-info {
+    background: #D9D5C9;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.student-info p {
+    color: #263B38;
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+/* =========================
+   TOMBOL
+========================= */
+
+.button-group {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 10px;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background: #C87545;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #A95D35;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 2px solid #123C3A;
+    color: #123C3A;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: #123C3A;
+    color: white;
+}
+
+.btn-danger {
+    background: #A64F43;
+    color: white;
+    margin-top: 25px;
+}
+
+.btn-danger:hover {
+    background: #873D34;
+}
+
+/* =========================
+   FORM PENDAFTARAN DAN LOGIN
+========================= */
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    color: #263B38;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #C5C2B7;
+    border-radius: 9px;
+
+    margin-bottom: 17px;
+
+    font-size: 14px;
+    background: #F7F4ED;
+    outline: none;
+}
+
+input:focus {
+    border-color: #C87545;
+    box-shadow: 0 0 5px
+    rgba(200, 117, 69, 0.3);
+}
+
+form button {
+    margin-top: 5px;
+}
+
+/* =========================
+   TOMBOL KEMBALI
+========================= */
+
+.back-link {
+    display: inline-block;
+    margin-top: 22px;
+
+    color: #A95D35;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   HALAMAN PROFIL
+========================= */
+
+.profile-card {
+    max-width: 500px;
+}
+
+.profile-header {
+    background: #123C3A;
+    padding: 25px 15px;
+    border-radius: 15px;
+
+    color: white;
+    margin-bottom: 20px;
+}
+
+.profile-header h2 {
+    color: #E8E1D4;
+}
+
+.profile-header p {
+    font-size: 13px;
+    color: #D1DCD3;
+}
+
+.profile-label {
+    display: block;
+    color: #D9A27E;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   FOTO / INISIAL PROFIL
+========================= */
+
+.avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+    background: #C87545;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    margin: 0 auto 15px;
+}
+
+/* =========================
+   DETAIL PROFIL
+========================= */
+
+.profile-content {
+    text-align: left;
+}
+
+.profile-item {
+    padding: 13px 5px;
+    border-bottom: 1px solid #D5D0C4;
+}
+
+.profile-item span {
+    display: block;
+    color: #68766D;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.profile-item strong {
+    color: #263B38;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    color: #68766D;
+    font-size: 11px;
+    margin-top: 25px;
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media screen and (max-width: 480px) {
+
+    .welcome-card,
+    .form-card,
+    .profile-card {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+}
